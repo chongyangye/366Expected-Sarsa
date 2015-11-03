@@ -1,6 +1,6 @@
 import blackjack
 from pylab import *
-import random
+from random import *
 
 numEpisodes = 2000
 
@@ -10,7 +10,7 @@ for episodeNum in range(numEpisodes):
     black = blackjack.init()
     action =[0,1]
     while black!=-1:
-        num = random.randint(0,1)
+        num = randint(0,1)
     	n,black = blackjack.sample(black,action[num])
     	
     	G+=n
